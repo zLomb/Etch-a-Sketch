@@ -1,0 +1,9 @@
+#main-container {
+    display: grid;
+    width: 900px;
+    height: 900px;
+}
+
+.grid-hover {
+    background-color: black;
+}
