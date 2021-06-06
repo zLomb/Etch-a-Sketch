@@ -2,6 +2,14 @@ body {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
+h1 {
+    font-family: 'Odibee Sans', cursive;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 45px;
+}
+
 #main-container {
     background-color: white;
     margin: auto;
@@ -10,8 +18,14 @@ body {
     border-color: black;
     border-radius: 10px;
     display: grid;
-    width: 520px;
-    height: 520px;
+    width: 35vw;
+    height: 35vw;
+}
+
+.grid-box {
+    border-style: solid;
+    border-color: #6f7070;
+    border-width: 0.1px;
 }
 
 .buttons {
@@ -21,15 +35,15 @@ body {
 }
 
 .buttons button {
-    height: 50px;
-    width: 100px;
+    height: 3vw;
+    width: 6.5vw;
     text-align: center;
     margin-right: 5px;
-    margin-top: 25px;
+    margin-top: 5px;
     background-color: black;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 .buttons button:hover {

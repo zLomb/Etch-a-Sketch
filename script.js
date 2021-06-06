@@ -42,7 +42,7 @@ function clearBoxes() {
 }
 
 // Clear button
-createGrid(100, 100);
+createGrid(16, 16);
 
 const gridButton = document.getElementById("clear");
 gridButton.addEventListener("click", function() {
