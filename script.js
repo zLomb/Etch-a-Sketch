@@ -20,14 +20,19 @@ function createGrid(rows, columns) {
     cont.style.gridTemplateRows = "repeat(var(--sides), auto)";
 }
 
-function colorBoxes() {
+// Function to color boxes
+
+function colorBoxes(color) {
     const divs = document.querySelectorAll(".grid-box");
     divs.forEach(gridBox => {
+        gridBox.classList.add("color");
         gridBox.addEventListener("mouseenter", function(e) {
-            e.target.classList.add("grid-hover");
+            e.target.style.setProperty("--color", color);
         })
     })
 }
+
+// Function to clear all colored boxes
 
 function clearBoxes() {
     const divs = document.querySelectorAll(".grid-box");
@@ -36,14 +41,32 @@ function clearBoxes() {
     })
 }
 
-const gridButton = document.getElementById("create-grid");
+// Clear button
+createGrid(100, 100);
+
+const gridButton = document.getElementById("clear");
 gridButton.addEventListener("click", function() {
     let boxes = prompt("How many boxes per side?", 16);
-    if (boxes > 50) {
-        alert("Please input a number under 50.");
+    if (boxes > 100) {
+        alert("Please input a number under 100.");
     } else {
         clearBoxes();
         createGrid(boxes, boxes);
-        colorBoxes();
     }
 })
+
+const blackButton = document.getElementById("black");
+blackButton.addEventListener("click", function () {
+    colorBoxes("black");
+})
+
+const redButton = document.getElementById("red");
+redButton.addEventListener("click", function () {
+    colorBoxes("red");
+})
+
+const blueButton = document.getElementById("blue");
+blueButton.addEventListener("click", function () {
+    colorBoxes("blue");
+})
+

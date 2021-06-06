@@ -1,9 +1,33 @@
-#main-container {
-    display: grid;
-    width: 900px;
-    height: 900px;
-}
-
-.grid-hover {
+body {
     background-color: black;
 }
+
+#main-container {
+    background-color: white;
+    margin: auto;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    display: grid;
+    width: 600px;
+    height: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.color {
+    --color: white;
+    background-color: var(--color);
+}
+
