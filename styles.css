@@ -2,12 +2,25 @@ body {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-h1 {
+.etch-sketch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.etch-sketch h1 {
     font-family: 'Odibee Sans', cursive;
-    color: yellow;
+    color: rgb(201, 15, 15);
     text-shadow: 2px 2px black;
     text-align: center;
     font-size: 45px;
+    align-self: center;
+}
+
+.etch-sketch p {
+    font-family: 'Odibee Sans', cursive;
+    margin-left: 10px;
 }
 
 #main-container {
@@ -15,8 +28,9 @@ h1 {
     margin: auto;
     border-style: solid;
     border-width: 15px;
-    border-color: black;
-    border-radius: 10px;
+    border-color: rgb(158, 13, 13);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
     display: grid;
     width: 35vw;
     height: 35vw;
@@ -38,20 +52,23 @@ h1 {
     height: 3vw;
     width: 6.5vw;
     text-align: center;
+    font-family: 'Odibee Sans', cursive;
     margin-right: 5px;
     margin-top: 5px;
-    background-color: black;
+    background-color: rgb(158, 13, 13);
     color: white;
+    text-shadow: 1px 1px 0px black;
     border: none;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
+    outline: none;
 }
 
 .buttons button:hover {
-    text-shadow: 1px 1px 4px white;
+    text-shadow: 1px 1px 4px rgb(255, 183, 28);
 }
 
 #random {
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
 .color {
