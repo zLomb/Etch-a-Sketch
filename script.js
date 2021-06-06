@@ -70,3 +70,8 @@ blueButton.addEventListener("click", function () {
     colorBoxes("blue");
 })
 
+const randomButton = document.getElementById("random");
+randomButton.addEventListener("click", function () {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxes("#"+randomColor);
+})
